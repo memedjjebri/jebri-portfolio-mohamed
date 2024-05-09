@@ -1,0 +1,176 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 2.2;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmVq8uttfZv6xmGSPTKGX_Itwz4cmXNK02w&s");
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  font-size: 22px;
+  color: rgba(229, 245, 14, 0.89);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input,
+textarea,
+select {
+  margin-left: 50px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: #033f80;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 40%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.35rem;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 20px 1px #007bff;
+}
+
+label {
+  margin-left: 50px;
+  color: rgba(229, 245, 14, 0.89);
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(229, 245, 14, 0.89);
+  font-weight: normal;
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+p {
+  color: rgba(229, 245, 14, 0.89);
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  margin-right: 700px;
+  margin-left: 200px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 20%;
+  height: 250px;
+}
+
+nav {
+  height: 250px;
+  background-color: rgba(235, 193, 193, 0.144);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 0.5rem;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(235, 193, 193, 0.144);
+  color: rgba(229, 245, 14, 0.89);
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}
