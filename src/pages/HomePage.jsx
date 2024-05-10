@@ -1,12 +1,36 @@
 import React from "react";
+import moi from "../assets/moi.png.webp";
+import linkedin from "..//assets/linkedin.png";
+import github from "../assets/github.png";
+import email from "../assets/email.png";
+
+
 
 const HomePage = () => {
   return (
     <div>
-      <img
-        src="https://www.stickees.com/files/avatars/face-avatars/1606-male-face-i2-sticker.png"
-        alt="avatar"
-      />
+      
+      <img src={moi} alt="Profile Picture" class="profile-picture" />
+      <ul className="team-icon">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mohamed-jebri-3a11047b/"
+            target="blank"
+          >
+            <img src={linkedin} alt="LinkedIn" />
+          </a>{" "}
+        </li>
+        <li>
+          <a href="https://github.com/memdjjebri" target="blank">
+            <img src={github} alt="Github" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:memedjjebri@gmail.com" target="blank">
+            <img src={email} alt="Email" />
+          </a>{" "}
+        </li>
+      </ul>
       <h1>JEBRI Mohamed </h1>
       <h2>Developpeur Web et Web et Web mobile </h2>
       <p>

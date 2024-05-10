@@ -1,12 +1,12 @@
 import React from "react";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
+    
     <nav>
-      <img
-        src="https://www.stickees.com/files/avatars/admin-avatars/1452-robot-male-sticker.png"
-        alt=""
-      />
+      <img src={logo} alt="Logo" />
+      
       <ul>
         <li>
           <a href="/">Accueil</a>
