@@ -201,7 +201,6 @@ footer {
   }
 
   nav {
-  
     display: block;
     position: absolute;
     top: 0;
@@ -235,4 +234,29 @@ footer {
     width: 100%;
     height: auto;
   }
+}
+.section .language-item {
+  margin: 0px 50px;
+  color: white;
+}
+
+.section .language-item .full {
+  width: 50%;
+  height: 15px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.section .language-item .percent {
+  background-color: rgba(229, 245, 14, 0.89);;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.section .language-item .first {
+  width: 92%;
+}
+
+.section .language-item .second {
+  width: 75%;
 }
