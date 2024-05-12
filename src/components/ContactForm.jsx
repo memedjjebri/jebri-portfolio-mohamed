@@ -7,7 +7,6 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Envoyer les données du formulaire
   };
 
   return (
