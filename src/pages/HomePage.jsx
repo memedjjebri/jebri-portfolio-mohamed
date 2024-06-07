@@ -1,4 +1,4 @@
-import React from "react";
+
 import moi from "../assets/moi.png.webp";
 import linkedin from "..//assets/linkedin.png";
 import github from "../assets/github.png";
@@ -16,7 +16,7 @@ const HomePage = () => {
             <img
               src={moi}
               alt="Profile Picture"
-              className="w-32 h-32 rounded-full mx-auto mb-6"
+              className="w-64 h-64 rounded-full mx-auto mb-6"
             />
             <ul className="flex justify-center space-x-6 mb-6">
               <li>
@@ -24,17 +24,17 @@ const HomePage = () => {
                   href="https://www.linkedin.com/in/mohamed-jebri-3a11047b/"
                   target="_blank"
                 >
-                  <img src={linkedin} alt="LinkedIn" className="w-6 h-6" />
+                  <img src={linkedin} alt="LinkedIn" className="w-12 h-12" />
                 </a>
               </li>
               <li>
                 <a href="https://github.com/memdjjebri" target="_blank">
-                  <img src={github} alt="Github" className="w-6 h-6" />
+                  <img src={github} alt="Github" className="w-12 h-12" />
                 </a>
               </li>
               <li>
                 <a href="mailto:memedjjebri@gmail.com" target="_blank">
-                  <img src={email} alt="Email" className="w-6 h-6" />
+                  <img src={email} alt="Email" className="w-12 h-12" />
                 </a>
               </li>
             </ul>

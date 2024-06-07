@@ -1,7 +1,8 @@
-import React from "react";
+
 
 const ProjectCard = ({ project }) => {
   return (
+    
     <div className="bg-white shadow-md rounded-md overflow-hidden">
       <img
         src={project.image}
@@ -16,6 +17,7 @@ const ProjectCard = ({ project }) => {
         </a>
       </div>
     </div>
+    
   );
 };
 

@@ -1,5 +1,7 @@
-import React from "react";
+
 import ProjectCard from "./ProjectCard";
+
+
 
 const projects = [
   {
@@ -7,7 +9,7 @@ const projects = [
     title: "Frise chronologique : Histoire de l'humanité",
     description:
       "Ce projet consistait à créer une frise chronologique interactive retraçant les événements clés de l'histoire de l'humanité. Vous avez utilisé des technologies web telles que HTML, CSS et JavaScript pour concevoir et développer cette frise. Elle permettait aux utilisateurs d'explorer différentes périodes de l'histoire en cliquant sur des points spécifiques pour afficher des informations détaillées.",
-    image: "https://o.quizlet.com/IsbVWm9YIvV5osWWJYN56A.jpg",
+    image: "src/assets/gopast.webp",
     link: "https://moonlow31.github.io/Projet-Chrono/",
   },
   {
@@ -15,8 +17,8 @@ const projects = [
     title: "Globe Guide",
     description:
       "Globe Guide est une application de voyage que nous avons développée pour aider les utilisateurs à découvrir de nouvelles destinations et à planifier leurs voyages. Cette application utilisait des technologies web avancées telles que React et des API de meteo,change devise et jours feriées pour offrir une interface conviviale où les utilisateurs pouvaient rechercher des destinations, explorer des attractions locales, et créer des itinéraires personnalisés pour leurs voyages.",
-    image:
-      "https://cdn.pixabay.com/photo/2018/07/16/16/08/island-3542290_640.jpg",
+    image: "src/assets/globeguide.png",
+
     link: "https://globe-guide.netlify.app/",
   },
   {
@@ -26,15 +28,23 @@ const projects = [
       "Un projet où j'ai présenté mon parcours, mes compétences, ainsi que les projets sur lesquels j'ai travaillé. Je l'ai développé en utilisant des technologies modernes telles que React et React Router pour créer une expérience utilisateur fluide et interactive. Le portfolio est conçu pour mettre en valeur mes compétences en développement web tout en fournissant un aperçu de ma personnalité et de mon style professionnel.",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGVa9ob0DIgAJO7h1SnnU6o1EXXXTPueDt2_Nm1N55RC9GGtC54Ppjl_DQ-aQ-vvV9Q5U&usqp=CAU",
-    link: "https://new-portfolio-jebri-mohamed.netlify.app/",
+    link: "https://memedjjebriportfolio.netlify.app/",
   },
   {
     id: 4,
-    title: "Portfolio",
+    title: "Age Calculator",
     description:
-      "Un projet où j'ai présenté mon parcours, mes compétences, ainsi que les projets sur lesquels j'ai travaillé. Je l'ai développé en utilisant des technologies modernes telles que React et React Router pour créer une expérience utilisateur fluide et interactive. Le portfolio est conçu pour mettre en valeur mes compétences en développement web tout en fournissant un aperçu de ma personnalité et de mon style professionnel.",
-    image: "background.jpg.jpg",
+      "Ce projet est un calculateur d'âge interactif qui permet aux utilisateurs de saisir leur date de naissance. Une fois la date entrée, un simple clic sur le bouton Calculer déclenche le calcul de l'âge en années, mois et jours qui est ensuite affiché à l'écran. L'interface est conçue pour être conviviale et fonctionne sur tous les appareils grâce à l'utilisation de HTML, CSS et JavaScript.",
+    image: "src/assets/age calculator.png",
     link: "https://age-calculator-jebri-app.netlify.app/",
+  },
+  {
+    id: 5,
+    title: "Code Nature",
+    description:
+      "Un site dédié aux parcs nationaux de France, conçu avec React et Tailwind CSS. Explorez des paysages époustouflants et une flore exceptionnelle grâce à une navigation interactive et des itinéraires de randonnée détaillés. Sensibilisez-vous à la protection de la nature et planifiez votre prochaine aventure en découvrant nos trésors naturels pour les générations futures.",
+    image: "src/assets/codenature.png",
+    link: "https://code-nature.netlify.app/",
   },
 ];
 
