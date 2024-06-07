@@ -8,7 +8,6 @@ const projects = [
     description:
       "Ce projet consistait à créer une frise chronologique interactive retraçant les événements clés de l'histoire de l'humanité. Vous avez utilisé des technologies web telles que HTML, CSS et JavaScript pour concevoir et développer cette frise. Elle permettait aux utilisateurs d'explorer différentes périodes de l'histoire en cliquant sur des points spécifiques pour afficher des informations détaillées.",
     image: "https://o.quizlet.com/IsbVWm9YIvV5osWWJYN56A.jpg",
-
     link: "https://moonlow31.github.io/Projet-Chrono/",
   },
   {
@@ -22,21 +21,31 @@ const projects = [
   },
   {
     id: 3,
-    title: "Portfolio.1",
+    title: "Portfolio",
     description:
       "Un projet où j'ai présenté mon parcours, mes compétences, ainsi que les projets sur lesquels j'ai travaillé. Je l'ai développé en utilisant des technologies modernes telles que React et React Router pour créer une expérience utilisateur fluide et interactive. Le portfolio est conçu pour mettre en valeur mes compétences en développement web tout en fournissant un aperçu de ma personnalité et de mon style professionnel.",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGVa9ob0DIgAJO7h1SnnU6o1EXXXTPueDt2_Nm1N55RC9GGtC54Ppjl_DQ-aQ-vvV9Q5U&usqp=CAU",
     link: "https://new-portfolio-jebri-mohamed.netlify.app/",
   },
+  {
+    id: 4,
+    title: "Portfolio",
+    description:
+      "Un projet où j'ai présenté mon parcours, mes compétences, ainsi que les projets sur lesquels j'ai travaillé. Je l'ai développé en utilisant des technologies modernes telles que React et React Router pour créer une expérience utilisateur fluide et interactive. Le portfolio est conçu pour mettre en valeur mes compétences en développement web tout en fournissant un aperçu de ma personnalité et de mon style professionnel.",
+    image: "background.jpg.jpg",
+    link: "https://age-calculator-jebri-app.netlify.app/",
+  },
 ];
 
 const ProjectList = () => {
   return (
-    <div>
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
+    <div className="container mx-auto p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
     </div>
   );
 };

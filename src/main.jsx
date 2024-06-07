@@ -8,9 +8,8 @@ import ProjectPage from "./pages/ProjectPage";
 import ContactPage from "./pages/ContactPage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import "./styles/global.css";
 
-
+import "./index.css";
 
 const router = createBrowserRouter([
   {

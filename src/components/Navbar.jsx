@@ -3,19 +3,23 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    
-    <nav>
-      <img src={logo} alt="Logo" />
-      
-      <ul>
+    <nav className="flex justify-between items-center bg-gray-800 p-4">
+      <img src={logo} alt="Logo" className="h-8" />
+      <ul className="flex space-x-4">
         <li>
-          <a href="/">Accueil</a>
+          <a href="/" className="text-white hover:text-gray-400">
+            Accueil
+          </a>
         </li>
         <li>
-          <a href="/projects">Projets</a>
+          <a href="/projects" className="text-white hover:text-gray-400">
+            Projets
+          </a>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <a href="/contact" className="text-white hover:text-gray-400">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

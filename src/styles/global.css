@@ -89,9 +89,10 @@ h1 {
   margin-left: 50px;
 }
 
-h2 {
+h2 {padding: 10px ;
+  margin-bottom: 1px;
   margin-left: 50px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h3 {
@@ -174,6 +175,7 @@ nav ul {
 nav ul li {
   margin: 0 0.5rem;
 }
+
 
 footer {
   position: relative;
