@@ -9,6 +9,7 @@ import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
+    
     <Router>
       <Switch>
         <Route exact path="/">

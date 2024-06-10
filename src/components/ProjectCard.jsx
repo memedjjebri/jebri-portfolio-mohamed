@@ -3,7 +3,7 @@
 const ProjectCard = ({ project }) => {
   return (
     
-    <div className="bg-white shadow-md rounded-md overflow-hidden">
+    <div className="bg-indigo-300 shadow-md rounded-md overflow-hidden">
       <img
         src={project.image}
         alt={project.title}
