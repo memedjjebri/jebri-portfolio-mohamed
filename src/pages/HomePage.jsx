@@ -1,14 +1,14 @@
-import moi from "../assets/moi.png.webp";
+import moi from "../assets/hero.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import email from "../assets/email.png";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen p-2 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="mb-24 max-w-xl mx-auto relative overflow-hidden z-10 bg-gray-800 p-8 rounded-lg shadow-md mt-8 before:w-24 before:h-24 before:absolute before:bg-purple-600 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12">
+          <div className="mb-48 max-w-xl mx-auto relative overflow-hidden z-10 bg-gray-800 p-8 rounded-lg shadow-md mt-8 before:w-24 before:h-24 before:absolute before:bg-purple-600 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12">
             <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold text-center">
               <span className="text-indigo-800 md:text-6xl text-5xl block">
                 Hello!
@@ -22,14 +22,19 @@ const HomePage = () => {
               <img
                 src={moi}
                 alt="Profile Picture"
-                className="w-64 h-64 rounded-full mx-auto mb-6"
+                className="w-64 h-96 rounded-md mx-auto mb-6"
               />
+              <button className="m-12 bg-gray-900 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                Contactez-moi
+              </button>
+
               <ul className="flex items-center justify-center mb-8 space-x-4">
-                <li>
+                <li className="transition duration-300 ease-in-out transform hover:scale-110">
                   <a
                     href="https://www.linkedin.com/in/mohamed-jebri-3a11047b/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="inline-block p-2 rounded-full hover:bg-white"
                   >
                     <img
                       src={linkedin}
@@ -38,11 +43,12 @@ const HomePage = () => {
                     />
                   </a>
                 </li>
-                <li>
+                <li className="transition duration-300 ease-in-out transform hover:scale-110">
                   <a
                     href="https://github.com/memdjjebri"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="inline-block p-2 rounded-full hover:bg-white"
                   >
                     <img
                       src={github}
@@ -51,11 +57,12 @@ const HomePage = () => {
                     />
                   </a>
                 </li>
-                <li>
+                <li className="transition duration-300 ease-in-out transform hover:scale-110">
                   <a
                     href="mailto:memedjjebri@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="inline-block p-2 rounded-full hover:bg-white"
                   >
                     <img
                       src={email}
@@ -67,7 +74,7 @@ const HomePage = () => {
               </ul>
             </div>
           </div>
-          <div className="mb-24 max-w-xl mx-auto relative overflow-hidden z-10 bg-gray-800 p-8 rounded-lg shadow-md mt-8 before:w-24 before:h-24 before:absolute before:bg-purple-600 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12">
+          <div className="mb-48 max-w-xl mx-auto relative overflow-hidden z-10 bg-gray-800 p-8 rounded-lg shadow-md mt-8 before:w-24 before:h-24 before:absolute before:bg-purple-600 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12">
             <p className="text-lg text-gray-300 mb-6">
               Un développeur web junior en formation, passionné du web et des
               technologies numériques, motivé à acquérir les compétences
