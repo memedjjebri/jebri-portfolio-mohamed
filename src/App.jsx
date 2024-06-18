@@ -11,7 +11,7 @@ function App() {
   return (
     
     <Router>
-      <Switch>
+     
         <Route exact path="/">
           <HomePage />
         </Route>
@@ -25,7 +25,7 @@ function App() {
           <ContactPage />
         </Route>
        
-      </Switch>
+   
     </Router>
   );
 }

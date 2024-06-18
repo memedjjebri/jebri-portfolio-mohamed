@@ -1,45 +1,74 @@
-
 import moi from "../assets/moi.png.webp";
-import linkedin from "..//assets/linkedin.png";
+import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import email from "../assets/email.png";
 
 const HomePage = () => {
   return (
-    
-    <div className=" min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="sm:rounded-lg overflow-hidden shadow-xl">
-          <div className=" px-4 py-5 sm:px-6">
-            <h1 className="text-3xl font-bold text-gray-900">JEBRI Mohamed</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="mb-24 max-w-xl mx-auto relative overflow-hidden z-10 bg-gray-800 p-8 rounded-lg shadow-md mt-8 before:w-24 before:h-24 before:absolute before:bg-purple-600 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12">
+            <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold text-center">
+              <span className="text-indigo-800 md:text-6xl text-5xl block">
+                Hello!
+              </span>
+              My Name is <span className="text-indigo-200">JEBRI Mohamed</span>
+            </h1>
+            <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600 text-center">
+              Fullstack Developer
+            </h4>
+            <div className="text-center">
+              <img
+                src={moi}
+                alt="Profile Picture"
+                className="w-64 h-64 rounded-full mx-auto mb-6"
+              />
+              <ul className="flex items-center justify-center mb-8 space-x-4">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/mohamed-jebri-3a11047b/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={linkedin}
+                      alt="LinkedIn"
+                      className="w-12 h-12 text-blue-500"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/memdjjebri"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={github}
+                      alt="Github"
+                      className="w-12 h-12 text-blue-500"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:memedjjebri@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={email}
+                      alt="Email"
+                      className="w-12 h-12 text-blue-500"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="px-4 py-5 sm:p-6">
-            <img
-              src={moi}
-              alt="Profile Picture"
-              className="w-64 h-64 rounded-full mx-auto mb-6"
-            />
-            <ul className="flex justify-center space-x-6 mb-6">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/mohamed-jebri-3a11047b/"
-                  target="_blank"
-                >
-                  <img src={linkedin} alt="LinkedIn" className="w-12 h-12" />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/memdjjebri" target="_blank">
-                  <img src={github} alt="Github" className="w-12 h-12" />
-                </a>
-              </li>
-              <li>
-                <a href="mailto:memedjjebri@gmail.com" target="_blank">
-                  <img src={email} alt="Email" className="w-12 h-12" />
-                </a>
-              </li>
-            </ul>
-            <p className="text-lg text-gray-700 mb-6">
+          <div className="mb-24 max-w-xl mx-auto relative overflow-hidden z-10 bg-gray-800 p-8 rounded-lg shadow-md mt-8 before:w-24 before:h-24 before:absolute before:bg-purple-600 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12">
+            <p className="text-lg text-gray-300 mb-6">
               Un développeur web junior en formation, passionné du web et des
               technologies numériques, motivé à acquérir les compétences
               nécessaires pour concevoir, développer et maintenir des sites web
@@ -49,8 +78,8 @@ const HomePage = () => {
               apprendre rapidement, mon esprit d'équipe et ma motivation à
               rester à jour avec les dernières tendances.
             </p>
-            <h2 className="text-xl font-bold mb-2">Compétences</h2>
-            <p className="text-gray-700 mb-6">
+            <h2 className="text-xl font-bold mb-2 text-white">Compétences</h2>
+            <p className="text-gray-300 mb-6">
               Une maîtrise des langages de programmation web tels que HTML, CSS
               et JavaScript, ainsi que des frameworks et bibliothèques associés
               comme React ou Vue.js. Une compréhension approfondie des concepts
@@ -59,36 +88,38 @@ const HomePage = () => {
               technologies sont également mes compétences essentielles pour
               réussir dans ce domaine.
             </p>
-            <div className="section mb-6">
-              <h3 className="text-xl font-bold mb-2">Langues</h3>
-              <div className="language-item mb-2">
+            <div className="mb-6">
+              <h3 className="text-xl font-bold mb-2 text-white">Langues</h3>
+              <div className="language-item mb-2 text-gray-300">
                 <h2>Français</h2>
                 <span>Locuteur natif</span>
-                <div className="bg-gray-200 h-4 w-40 mt-1 rounded-full">
+                <div className="bg-gray-600 h-4 w-40 mt-1 rounded-full">
                   <div className="bg-blue-500 h-full rounded-full"></div>
                 </div>
               </div>
-              <div className="language-item mb-2">
+              <div className="language-item mb-2 text-gray-300">
                 <h2>Arabe</h2>
                 <span>Locuteur natif</span>
-                <div className="bg-gray-200 h-4 w-40 mt-1 rounded-full">
+                <div className="bg-gray-600 h-4 w-40 mt-1 rounded-full">
                   <div className="bg-blue-500 h-full rounded-full"></div>
                 </div>
               </div>
-              <div className="language-item mb-2">
+              <div className="language-item mb-2 text-gray-300">
                 <h2>Anglais</h2>
                 <span>Compétences professionnelles</span>
-                <div className="bg-gray-200 h-4 w-40 mt-1 rounded-full">
+                <div className="bg-gray-600 h-4 w-40 mt-1 rounded-full">
                   <div className="bg-blue-500 h-full rounded-full"></div>
                 </div>
               </div>
             </div>
-            <div className="section">
-              <h3 className="text-xl font-bold mb-2">Centres d'intérêt</h3>
-              <p className="mb-1">Sport</p>
-              <p className="mb-1">Cinéma</p>
-              <p className="mb-1">Voyages</p>
-              <p className="mb-1">Musique</p>
+            <div>
+              <h3 className="text-xl font-bold mb-2 text-white">
+                Centres d'intérêt
+              </h3>
+              <p className="mb-1 text-gray-300">Sport</p>
+              <p className="mb-1 text-gray-300">Cinéma</p>
+              <p className="mb-1 text-gray-300">Voyages</p>
+              <p className="mb-1 text-gray-300">Musique</p>
             </div>
           </div>
         </div>
