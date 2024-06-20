@@ -3,6 +3,8 @@ import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import email from "../assets/email.png";
 
+
+
 const HomePage = () => {
   return (
     <div className="min-h-screen p-2 sm:px-6 lg:px-8">
