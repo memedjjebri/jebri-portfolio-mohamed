@@ -2,12 +2,12 @@ import moi from "../assets/hero.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import email from "../assets/email.png";
-
-
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub } from "react-icons/fa";
+import { SiTailwindcss, SiSass, SiFigma, SiGit, SiMysql } from "react-icons/si";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen p-2 sm:px-6 lg:px-8">
+    <div className="min-h-screen p-2 sm:px-6 lg:px-8 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="mb-12 max-w-xl mx-auto relative overflow-hidden z-10 bg-gray-800 p-8 rounded-lg shadow-md mt-8 before:w-24 before:h-24 before:absolute before:bg-purple-600 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12">
@@ -17,7 +17,7 @@ const HomePage = () => {
               </span>
               My Name is <span className="text-indigo-200">JEBRI Mohamed</span>
             </h1>
-            <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600 text-center">
+            <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-400 text-center">
               Fullstack Developer
             </h4>
             <div className="text-center">
@@ -26,10 +26,9 @@ const HomePage = () => {
                 alt="Profile Picture"
                 className="w-64 h-96 rounded-md mx-auto mb-6"
               />
-              <button className="m-12 bg-gray-900 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+              <button className="m-12 bg-gray-900 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
                 Contactez-moi
               </button>
-
               <ul className="flex items-center justify-center mb-8 space-x-4">
                 <li className="transition duration-300 ease-in-out transform hover:scale-110">
                   <a
@@ -38,11 +37,7 @@ const HomePage = () => {
                     rel="noopener noreferrer"
                     className="inline-block p-2 rounded-full hover:bg-white"
                   >
-                    <img
-                      src={linkedin}
-                      alt="LinkedIn"
-                      className="w-12 h-12 text-blue-500"
-                    />
+                    <img src={linkedin} alt="LinkedIn" className="w-12 h-12" />
                   </a>
                 </li>
                 <li className="transition duration-300 ease-in-out transform hover:scale-110">
@@ -52,11 +47,7 @@ const HomePage = () => {
                     rel="noopener noreferrer"
                     className="inline-block p-2 rounded-full hover:bg-white"
                   >
-                    <img
-                      src={github}
-                      alt="Github"
-                      className="w-12 h-12 text-blue-500"
-                    />
+                    <img src={github} alt="Github" className="w-12 h-12" />
                   </a>
                 </li>
                 <li className="transition duration-300 ease-in-out transform hover:scale-110">
@@ -66,11 +57,7 @@ const HomePage = () => {
                     rel="noopener noreferrer"
                     className="inline-block p-2 rounded-full hover:bg-white"
                   >
-                    <img
-                      src={email}
-                      alt="Email"
-                      className="w-12 h-12 text-blue-500"
-                    />
+                    <img src={email} alt="Email" className="w-12 h-12" />
                   </a>
                 </li>
               </ul>
@@ -97,27 +84,69 @@ const HomePage = () => {
               technologies sont également mes compétences essentielles pour
               réussir dans ce domaine.
             </p>
+            <div className="flex flex-wrap gap-4 justify-center mb-6 text-white">
+              <FaHtml5
+                size={30}
+                className="hover:text-red-500 transition duration-300 ease-in-out"
+              />
+              <FaCss3Alt
+                size={30}
+                className="hover:text-blue-500 transition duration-300 ease-in-out"
+              />
+              <SiTailwindcss
+                size={30}
+                className="hover:text-teal-500 transition duration-300 ease-in-out"
+              />
+              <SiSass
+                size={30}
+                className="hover:text-pink-500 transition duration-300 ease-in-out"
+              />
+              <FaJs
+                size={30}
+                className="hover:text-yellow-500 transition duration-300 ease-in-out"
+              />
+              <FaReact
+                size={30}
+                className="hover:text-blue-300 transition duration-300 ease-in-out"
+              />
+              <SiFigma
+                size={30}
+                className="hover:text-purple-500 transition duration-300 ease-in-out"
+              />
+              <FaGithub
+                size={30}
+                className="hover:text-gray-500 transition duration-300 ease-in-out"
+              />
+              <SiGit
+                size={30}
+                className="hover:text-orange-500 transition duration-300 ease-in-out"
+              />
+              <SiMysql
+                size={30}
+                className="hover:text-blue-700 transition duration-300 ease-in-out"
+              />
+            </div>
             <div className="mb-6">
               <h3 className="text-xl font-bold mb-2 text-white">Langues</h3>
-              <div className="language-item mb-2 text-gray-300">
-                <h2>Français</h2>
-                <span>Locuteur natif</span>
-                <div className="bg-gray-600 h-4 w-40 mt-1 rounded-full">
-                  <div className="bg-blue-500 h-full rounded-full"></div>
+              <div className="language-item mb-4 text-gray-300">
+                <h2 className="text-lg font-semibold">Français</h2>
+                <span className="text-sm"></span>
+                <div className="bg-gray-600 h-4 w-full mt-1 rounded-full">
+                  <div className="bg-blue-500 h-full rounded-full w-full"></div>
                 </div>
               </div>
-              <div className="language-item mb-2 text-gray-300">
-                <h2>Arabe</h2>
-                <span>Locuteur natif</span>
-                <div className="bg-gray-600 h-4 w-40 mt-1 rounded-full">
-                  <div className="bg-blue-500 h-full rounded-full"></div>
+              <div className="language-item mb-4 text-gray-300">
+                <h2 className="text-lg font-semibold">Arabe</h2>
+                <span className="text-sm"></span>
+                <div className="bg-gray-600 h-4 w-full mt-1 rounded-full">
+                  <div className="bg-blue-500 h-full rounded-full w-full"></div>
                 </div>
               </div>
-              <div className="language-item mb-2 text-gray-300">
-                <h2>Anglais</h2>
-                <span>Compétences professionnelles</span>
-                <div className="bg-gray-600 h-4 w-40 mt-1 rounded-full">
-                  <div className="bg-blue-500 h-full rounded-full"></div>
+              <div className="language-item mb-4 text-gray-300">
+                <h2 className="text-lg font-semibold">Anglais</h2>
+                <span className="text-sm"></span>
+                <div className="bg-gray-600 h-4 w-full mt-1 rounded-full">
+                  <div className="bg-blue-500 h-full rounded-full w-3/4"></div>
                 </div>
               </div>
             </div>
@@ -125,10 +154,20 @@ const HomePage = () => {
               <h3 className="text-xl font-bold mb-2 text-white">
                 Centres d'intérêt
               </h3>
-              <p className="mb-1 text-gray-300">Sport</p>
-              <p className="mb-1 text-gray-300">Cinéma</p>
-              <p className="mb-1 text-gray-300">Voyages</p>
-              <p className="mb-1 text-gray-300">Musique</p>
+              <div className="flex flex-wrap gap-2">
+                <span className="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">
+                  Sport
+                </span>
+                <span className="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">
+                  Cinéma
+                </span>
+                <span className="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">
+                  Voyages
+                </span>
+                <span className="bg-gray-700 text-gray-200 px-3 py-1 rounded-full">
+                  Musique
+                </span>
+              </div>
             </div>
           </div>
         </div>
