@@ -86,43 +86,43 @@ const HomePage = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center mb-6 text-white">
               <FaHtml5
-                size={30}
+                size={35}
                 className="hover:text-red-500 transition duration-300 ease-in-out"
               />
               <FaCss3Alt
-                size={30}
+                size={35}
                 className="hover:text-blue-500 transition duration-300 ease-in-out"
               />
               <SiTailwindcss
-                size={30}
+                size={35}
                 className="hover:text-teal-500 transition duration-300 ease-in-out"
               />
               <SiSass
-                size={30}
+                size={35}
                 className="hover:text-pink-500 transition duration-300 ease-in-out"
               />
               <FaJs
-                size={30}
+                size={35}
                 className="hover:text-yellow-500 transition duration-300 ease-in-out"
               />
               <FaReact
-                size={30}
+                size={35}
                 className="hover:text-blue-300 transition duration-300 ease-in-out"
               />
               <SiFigma
-                size={30}
+                size={35}
                 className="hover:text-purple-500 transition duration-300 ease-in-out"
               />
               <FaGithub
-                size={30}
+                size={35}
                 className="hover:text-gray-500 transition duration-300 ease-in-out"
               />
               <SiGit
-                size={30}
+                size={35}
                 className="hover:text-orange-500 transition duration-300 ease-in-out"
               />
               <SiMysql
-                size={30}
+                size={35}
                 className="hover:text-blue-700 transition duration-300 ease-in-out"
               />
             </div>
