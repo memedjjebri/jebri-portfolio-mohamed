@@ -42,7 +42,7 @@ const HomePage = () => {
                 </li>
                 <li className="transition duration-300 ease-in-out transform hover:scale-110">
                   <a
-                    href="https://github.com/memdjjebri"
+                    href="https://github.com/memedjjebri"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block p-2 rounded-full hover:bg-white"
